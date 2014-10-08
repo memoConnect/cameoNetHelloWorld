@@ -42,14 +42,8 @@ var app = {
             alert("ERROR: " + error);
         };
 
-        console.dir(window.device.baa)
-        console.dir(window.device)
-        console.dir(window.device.model)
         console.dir(window.hello.foo)
         window.hello.greet(win, fail)
-
-
-
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {
