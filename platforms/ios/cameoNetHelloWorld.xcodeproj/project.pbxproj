@@ -38,7 +38,6 @@
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		58B7498722444A3382661813 /* HWPHello.m in Sources */ = {isa = PBXBuildFile; fileRef = 894DFF1F9400491CB8ECFF6D /* HWPHello.m */; };
-		7EDC8433D55D4F95A7A8D7BF /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 96251AA20D1F41F09913E751 /* CDVDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,8 +103,6 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "cameoNetHelloWorld/config.xml"; sourceTree = "<group>"; };
 		894DFF1F9400491CB8ECFF6D /* HWPHello.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "HWPHello.m"; path = "de.cameonet.cordova.test/HWPHello.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		05A6AC9FD1A44070AEEC884A /* HWPHello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "HWPHello.h"; path = "de.cameonet.cordova.test/HWPHello.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		96251AA20D1F41F09913E751 /* CDVDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVDevice.m"; path = "org.apache.cordova.device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		356A498AFA444921996B9E14 /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,8 +223,6 @@
 			children = (
 				894DFF1F9400491CB8ECFF6D /* HWPHello.m */,
 				05A6AC9FD1A44070AEEC884A /* HWPHello.h */,
-				96251AA20D1F41F09913E751 /* CDVDevice.m */,
-				356A498AFA444921996B9E14 /* CDVDevice.h */,
 			);
 			name = Plugins;
 			path = "cameoNetHelloWorld/Plugins";
@@ -423,7 +418,6 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				58B7498722444A3382661813 /* HWPHello.m in Sources */,
-				7EDC8433D55D4F95A7A8D7BF /* CDVDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

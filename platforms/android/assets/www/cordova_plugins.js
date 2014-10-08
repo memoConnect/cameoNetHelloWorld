@@ -6,20 +6,12 @@ module.exports = [
         "clobbers": [
             "hello"
         ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.device/www/device.js",
-        "id": "org.apache.cordova.device.device",
-        "clobbers": [
-            "device"
-        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "de.cameonet.cordova.test": "0.1",
-    "org.apache.cordova.device": "0.2.12"
+    "de.cameonet.cordova.test": "0.1"
 }
 // BOTTOM OF METADATA
 });

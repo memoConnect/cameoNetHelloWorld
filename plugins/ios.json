@@ -11,10 +11,6 @@
                         {
                             "xml": "<feature name=\"Hello\"><param name=\"ios-package\" value=\"HWPHello\" /></feature>",
                             "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
-                            "count": 1
                         }
                     ]
                 }
@@ -23,9 +19,6 @@
     },
     "installed_plugins": {
         "de.cameonet.cordova.test": {
-            "PACKAGE_NAME": "de.cameonet.helloworld"
-        },
-        "org.apache.cordova.device": {
             "PACKAGE_NAME": "de.cameonet.helloworld"
         }
     },
