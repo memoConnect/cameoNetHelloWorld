@@ -1,4 +1,13 @@
 /Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes.dex : \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/com/neilalexander/jnacl/crypto/curve25519.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/com/neilalexander/jnacl/crypto/curve25519xsalsa20poly1305.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/com/neilalexander/jnacl/crypto/hsalsa20.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/com/neilalexander/jnacl/crypto/poly1305.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/com/neilalexander/jnacl/crypto/salsa20.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/com/neilalexander/jnacl/crypto/verify_16.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/com/neilalexander/jnacl/crypto/xsalsa20.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/com/neilalexander/jnacl/crypto/xsalsa20poly1305.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/com/neilalexander/jnacl/NaCl.class \
 /Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/de/cameonet/cordova/test/Hello.class \
 /Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/de/cameonet/helloworld/BuildConfig.class \
 /Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/de/cameonet/helloworld/cameoNetHelloWorld.class \
@@ -7,5 +16,15 @@
 /Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/de/cameonet/helloworld/R$string.class \
 /Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/de/cameonet/helloworld/R$xml.class \
 /Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/de/cameonet/helloworld/R.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/de/datawerk/cordova/plugin/cryptohelper/CryptoHelper$1.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/de/datawerk/cordova/plugin/cryptohelper/CryptoHelper$2.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/de/datawerk/cordova/plugin/cryptohelper/CryptoHelper$3.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/de/datawerk/cordova/plugin/cryptohelper/CryptoHelper$4.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/de/datawerk/cordova/plugin/cryptohelper/CryptoHelper$5.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/de/datawerk/cordova/plugin/cryptohelper/CryptoHelper$6.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/de/datawerk/cordova/plugin/cryptohelper/CryptoHelper$7.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/de/datawerk/cordova/plugin/cryptohelper/CryptoHelper$8.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/de/datawerk/cordova/plugin/cryptohelper/CryptoHelper$9.class \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/de/datawerk/cordova/plugin/cryptohelper/CryptoHelper.class \
 /Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
 /Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/dexedLibs/classes-1e3a44efd60b68856da33d7ada4eec64.jar \

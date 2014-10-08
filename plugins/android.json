@@ -11,6 +11,10 @@
                         {
                             "xml": "<feature name=\"Hello\"><param name=\"android-package\" value=\"de.cameonet.cordova.test.Hello\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"cryptoHelper\"><param name=\"android-package\" value=\"de.datawerk.cordova.plugin.cryptohelper.CryptoHelper\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -19,6 +23,9 @@
     },
     "installed_plugins": {
         "de.cameonet.cordova.test": {
+            "PACKAGE_NAME": "de.cameonet.helloworld"
+        },
+        "de.datawerk.cordova.plugin.cryptohelper": {
             "PACKAGE_NAME": "de.cameonet.helloworld"
         }
     },

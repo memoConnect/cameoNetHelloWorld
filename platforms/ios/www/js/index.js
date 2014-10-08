@@ -36,12 +36,14 @@ var app = {
         app.receivedEvent('deviceready');
 
         var win = function (result) {
-            alert(result);
+            alert(JSON.stringify(result));
         }
         var fail = function (error) {
             alert("ERROR: " + error);
         };
-
+		
+		cordova.exec(win, fail, 'cryptoHelper', 'generateKeyPair', []);
+		
         console.dir(window.hello.foo)
         window.hello.greet(win, fail)
     },

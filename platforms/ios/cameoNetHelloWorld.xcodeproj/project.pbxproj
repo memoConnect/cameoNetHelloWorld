@@ -37,7 +37,9 @@
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		58B7498722444A3382661813 /* HWPHello.m in Sources */ = {isa = PBXBuildFile; fileRef = 894DFF1F9400491CB8ECFF6D /* HWPHello.m */; };
+		AE6F2908E72940A7BFE21367 /* HWPHello.m in Sources */ = {isa = PBXBuildFile; fileRef = AA969D4F0C514A1DA0DFC3FB /* HWPHello.m */; };
+		0E4E8294A5AB4449B2358196 /* libcrypto-sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F111365BCB4024BCB37287 /* libcrypto-sdk.a */; };
+		FB5786AD9DB849FAA0154F49 /* CryptoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5753B03F54EF4F35AF7319DC /* CryptoHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,8 +103,23 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "cameoNetHelloWorld/config.xml"; sourceTree = "<group>"; };
-		894DFF1F9400491CB8ECFF6D /* HWPHello.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "HWPHello.m"; path = "de.cameonet.cordova.test/HWPHello.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		05A6AC9FD1A44070AEEC884A /* HWPHello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "HWPHello.h"; path = "de.cameonet.cordova.test/HWPHello.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		AA969D4F0C514A1DA0DFC3FB /* HWPHello.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "HWPHello.m"; path = "de.cameonet.cordova.test/HWPHello.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		EAB713B8794E454F86B646A3 /* HWPHello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "HWPHello.h"; path = "de.cameonet.cordova.test/HWPHello.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		53F111365BCB4024BCB37287 /* libcrypto-sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-sdk.a"; path = "cameoNetHelloWorld/Plugins/de.datawerk.cordova.plugin.cryptohelper/libcrypto-sdk.a"; sourceTree = "<group>"; fileEncoding = 4; };
+		5753B03F54EF4F35AF7319DC /* CryptoHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CryptoHelper.m"; path = "de.datawerk.cordova.plugin.cryptohelper/CryptoHelper.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		20F32ECBC4034003AE0FF092 /* AeroGearCrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AeroGearCrypto.h"; path = "de.datawerk.cordova.plugin.cryptohelper/AeroGearCrypto.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		2DA3859350574B1AAE668EED /* AGCryptoBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AGCryptoBox.h"; path = "de.datawerk.cordova.plugin.cryptohelper/AGCryptoBox.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		A01FB588E95A4CA49D0F1E66 /* AGHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AGHash.h"; path = "de.datawerk.cordova.plugin.cryptohelper/AGHash.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		FDC75111315C4B7F9C94E9FA /* AGKeyPair.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AGKeyPair.h"; path = "de.datawerk.cordova.plugin.cryptohelper/AGKeyPair.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		2955E00467FE45F1B1E0191A /* AGPBKDF2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AGPBKDF2.h"; path = "de.datawerk.cordova.plugin.cryptohelper/AGPBKDF2.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		0A6B7F63B3F94BC8B05C0816 /* AGRandomGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AGRandomGenerator.h"; path = "de.datawerk.cordova.plugin.cryptohelper/AGRandomGenerator.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		1A56683A63FD4B769AC05FE2 /* AGSecretBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AGSecretBox.h"; path = "de.datawerk.cordova.plugin.cryptohelper/AGSecretBox.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		68DDBB0768674ACCA401974A /* AGSigningKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AGSigningKey.h"; path = "de.datawerk.cordova.plugin.cryptohelper/AGSigningKey.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		A03AA20C94BC4134953E5819 /* AGUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AGUtil.h"; path = "de.datawerk.cordova.plugin.cryptohelper/AGUtil.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		486C8385623F41199ED5F3DD /* AGVerifyKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AGVerifyKey.h"; path = "de.datawerk.cordova.plugin.cryptohelper/AGVerifyKey.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		DAFFEF0C1D6A4D519459F0C5 /* crypto_box_curve25519xsalsa20poly1305.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "crypto_box_curve25519xsalsa20poly1305.h"; path = "de.datawerk.cordova.plugin.cryptohelper/libsodium-ios/sodium/crypto_box_curve25519xsalsa20poly1305.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		797E03E979804A89AF4F0B47 /* export.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "export.h"; path = "de.datawerk.cordova.plugin.cryptohelper/libsodium-ios/sodium/export.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		7FE991BC7A7442569F1729A0 /* CryptoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CryptoHelper.h"; path = "de.datawerk.cordova.plugin.cryptohelper/CryptoHelper.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +131,7 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
+				0E4E8294A5AB4449B2358196 /* libcrypto-sdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +224,7 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
+				53F111365BCB4024BCB37287 /* libcrypto-sdk.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,8 +240,22 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				894DFF1F9400491CB8ECFF6D /* HWPHello.m */,
-				05A6AC9FD1A44070AEEC884A /* HWPHello.h */,
+				AA969D4F0C514A1DA0DFC3FB /* HWPHello.m */,
+				EAB713B8794E454F86B646A3 /* HWPHello.h */,
+				5753B03F54EF4F35AF7319DC /* CryptoHelper.m */,
+				20F32ECBC4034003AE0FF092 /* AeroGearCrypto.h */,
+				2DA3859350574B1AAE668EED /* AGCryptoBox.h */,
+				A01FB588E95A4CA49D0F1E66 /* AGHash.h */,
+				FDC75111315C4B7F9C94E9FA /* AGKeyPair.h */,
+				2955E00467FE45F1B1E0191A /* AGPBKDF2.h */,
+				0A6B7F63B3F94BC8B05C0816 /* AGRandomGenerator.h */,
+				1A56683A63FD4B769AC05FE2 /* AGSecretBox.h */,
+				68DDBB0768674ACCA401974A /* AGSigningKey.h */,
+				A03AA20C94BC4134953E5819 /* AGUtil.h */,
+				486C8385623F41199ED5F3DD /* AGVerifyKey.h */,
+				DAFFEF0C1D6A4D519459F0C5 /* crypto_box_curve25519xsalsa20poly1305.h */,
+				797E03E979804A89AF4F0B47 /* export.h */,
+				7FE991BC7A7442569F1729A0 /* CryptoHelper.h */,
 			);
 			name = Plugins;
 			path = "cameoNetHelloWorld/Plugins";
@@ -417,7 +450,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				58B7498722444A3382661813 /* HWPHello.m in Sources */,
+				AE6F2908E72940A7BFE21367 /* HWPHello.m in Sources */,
+				FB5786AD9DB849FAA0154F49 /* CryptoHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +531,10 @@
 				);
 				PRODUCT_NAME = "cameoNetHelloWorld";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/cameoNetHelloWorld/Plugins/de.datawerk.cordova.plugin.cryptohelper\"",
+				);
 			};
 			name = Debug;
 		};
@@ -528,6 +566,10 @@
 				);
 				PRODUCT_NAME = "cameoNetHelloWorld";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/cameoNetHelloWorld/Plugins/de.datawerk.cordova.plugin.cryptohelper\"",
+				);
 			};
 			name = Release;
 		};

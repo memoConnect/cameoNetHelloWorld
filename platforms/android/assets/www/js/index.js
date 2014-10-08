@@ -36,20 +36,16 @@ var app = {
         app.receivedEvent('deviceready');
 
         var win = function (result) {
-            alert(result);
+            alert(JSON.stringify(result));
         }
         var fail = function (error) {
             alert("ERROR: " + error);
         };
-
-        console.dir(window.device.baa)
-        console.dir(window.device)
-        console.dir(window.device.model)
+		
+		cordova.exec(win, fail, 'cryptoHelper', 'generateKeyPair', []);
+		
         console.dir(window.hello.foo)
         window.hello.greet(win, fail)
-
-
-
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {

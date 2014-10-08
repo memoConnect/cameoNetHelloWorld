@@ -40,9 +40,9 @@
 /Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/assets/www/img/logo.png \
 /Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/assets/www/js/index.js \
 /Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/assets/www/plugins/de.cameonet.cordova.test \
-/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/assets/www/plugins/org.apache.cordova.device \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/assets/www/plugins/de.datawerk.cordova.plugin.cryptohelper \
 /Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/assets/www/plugins/de.cameonet.cordova.test/www \
 /Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/assets/www/plugins/de.cameonet.cordova.test/www/hello.js \
-/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
-/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/assets/www/plugins/de.datawerk.cordova.plugin.cryptohelper/www \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/assets/www/plugins/de.datawerk.cordova.plugin.cryptohelper/www/crypto-helper.js \
 /Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/AndroidManifest.xml \
