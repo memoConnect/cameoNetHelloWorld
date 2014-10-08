@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="de.cameonet.cordova.test"
+    version="0.1">
+        
+	<name>Hello</name>
+
+    <js-module src="www/hello.js" name="hello">
+        <clobbers target="hello" />
+    </js-module>
+
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Hello">
+                <param name="android-package" value="de.cameonet.cordova.test.Hello" />
+            </feature>
+        </config-file>
+		        
+		<source-file src="src/android/Hello.java" target-dir="src/de/cameonet/cordova/test/plugin/" />
+    </platform>
+    
+    <platform name="ios">
+        <plugins-plist key="Hello" string="HWPHello" />			
+	    <header-file src="HWPHello.h" />	
+	    <source-file src="HWPHello.m" />	
+    </platform>	
+
+</plugin>
