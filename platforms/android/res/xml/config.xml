@@ -4,9 +4,6 @@
     <feature name="Hello">
         <param name="android-package" value="de.cameonet.cordova.test.Hello" />
     </feature>
-    <feature name="cryptoHelper">
-        <param name="android-package" value="de.datawerk.cordova.plugin.cryptohelper.CryptoHelper" />
-    </feature>
     <name>cameoNetHelloWorld</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

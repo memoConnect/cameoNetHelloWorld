@@ -14,6 +14,10 @@ function Hello() {
     this.greet = function(win, fail) {
         exec(win, fail, "Hello", "greet", ["MOEPER!"]);
     }
+	
+	this.generateKeyPair = function(win, fail, keySize) {
+		exec(win, fail, "Hello", "generateKeyPair", [keySize]);
+	}
 }
 
 module.exports = new Hello();

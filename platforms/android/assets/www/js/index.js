@@ -42,7 +42,7 @@ var app = {
             alert("ERROR: " + error);
         };
 		
-		cordova.exec(win, fail, 'cryptoHelper', 'generateKeyPair', []);
+		
 		
         console.dir(window.hello.foo)
         window.hello.greet(win, fail)

@@ -22,9 +22,6 @@
     <feature name="Hello">
         <param name="ios-package" value="HWPHello" />
     </feature>
-    <feature name="cryptoHelper">
-        <param name="ios-package" value="CryptoHelper" />
-    </feature>
     <name>cameoNetHelloWorld</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.

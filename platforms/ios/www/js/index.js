@@ -41,11 +41,11 @@ var app = {
         var fail = function (error) {
             alert("ERROR: " + error);
         };
+
+		window.hello.generateKeyPair(win, fail, 2048);
 		
-		cordova.exec(win, fail, 'cryptoHelper', 'generateKeyPair', []);
-		
-        console.dir(window.hello.foo)
-        window.hello.greet(win, fail)
+        console.dir(window.hello.foo);
+        window.hello.greet(win, fail);
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {

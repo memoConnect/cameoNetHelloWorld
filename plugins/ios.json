@@ -11,10 +11,6 @@
                         {
                             "xml": "<feature name=\"Hello\"><param name=\"ios-package\" value=\"HWPHello\" /></feature>",
                             "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"cryptoHelper\"><param name=\"ios-package\" value=\"CryptoHelper\" /></feature>",
-                            "count": 1
                         }
                     ]
                 }
@@ -23,9 +19,6 @@
     },
     "installed_plugins": {
         "de.cameonet.cordova.test": {
-            "PACKAGE_NAME": "de.cameonet.helloworld"
-        },
-        "de.datawerk.cordova.plugin.cryptohelper": {
             "PACKAGE_NAME": "de.cameonet.helloworld"
         }
     },
