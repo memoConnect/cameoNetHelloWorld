@@ -21,9 +21,13 @@
     </platform>
     
     <platform name="ios">
-        <plugins-plist key="Hello" string="HWPHello" />			
-	    <header-file src="HWPHello.h" />	
-	    <source-file src="HWPHello.m" />	
+		<config-file target="config.xml" parent="/*">
+            <feature name="Hello">
+                <param name="ios-package" value="HWPHello"/>
+            </feature>
+        </config-file>
+	    <header-file src="src/ios/HWPHello.h" />	
+	    <source-file src="src/ios/HWPHello.m" />	
     </platform>	
 
 </plugin>

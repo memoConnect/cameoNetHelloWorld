@@ -1,2 +1,2 @@
-/opt/dev/cameoNetHelloWorld/platforms/android/CordovaLib/ant-build/AndroidManifest.xml : \
-/opt/dev/cameoNetHelloWorld/platforms/android/CordovaLib/AndroidManifest.xml \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/CordovaLib/ant-build/AndroidManifest.xml : \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/CordovaLib/AndroidManifest.xml \

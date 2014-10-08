@@ -1,2 +1,2 @@
-/opt/dev/cameoNetHelloWorld/platforms/android/ant-build/AndroidManifest.xml : \
-/opt/dev/cameoNetHelloWorld/platforms/android/AndroidManifest.xml \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/ant-build/AndroidManifest.xml : \
+/Users/dermicha/workspace/iOS/cameoNetHelloWorld/platforms/android/AndroidManifest.xml \
