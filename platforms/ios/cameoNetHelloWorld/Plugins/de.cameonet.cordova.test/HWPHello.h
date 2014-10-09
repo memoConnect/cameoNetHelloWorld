@@ -10,6 +10,6 @@
 }
 
 - (void) greet:(CDVInvokedUrlCommand*)command;
-- (void)generateKeyPair:(CDVInvokedUrlCommand*)command;
+- (void) generateKeyPair:(CDVInvokedUrlCommand*)command;
 
 @end

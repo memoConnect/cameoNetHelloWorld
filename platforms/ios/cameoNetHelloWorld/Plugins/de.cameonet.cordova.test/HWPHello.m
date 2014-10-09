@@ -25,11 +25,10 @@ static const UInt8 privateKeyIdentifier[] = "com.apple.sample.privatekey";
 - (void)generateKeyPair:(CDVInvokedUrlCommand*)command
 {
     NSString* callbackId = [command callbackId];
-    //NSUInteger *keySize = [[command arguments] objectAtIndex:0];
-    NSInteger keySize = 2048;
-    
+    //NSUInteger keySize = [[command arguments] objectAtIndex:0];
+	int keySize = 2048;
+
     OSStatus sanityCheck = noErr;
-    
     publicKey = NULL;
     privateKey = NULL;
 
@@ -42,25 +41,25 @@ static const UInt8 privateKeyIdentifier[] = "com.apple.sample.privatekey";
     NSMutableDictionary * privateKeyAttr = [[NSMutableDictionary alloc] init];
     NSMutableDictionary * publicKeyAttr = [[NSMutableDictionary alloc] init];
     NSMutableDictionary * keyPairAttr = [[NSMutableDictionary alloc] init];
-    //NSLog(@"1");
+
     // Set top level dictionary for the keypair.
     [keyPairAttr setObject:(__bridge id)kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
     [keyPairAttr setObject:[NSNumber numberWithUnsignedInteger:keySize] forKey:(__bridge id)kSecAttrKeySizeInBits];
-    //NSLog(@"1");
+
     // Set the private key dictionary.
     [privateKeyAttr setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)kSecAttrIsPermanent];
     [privateKeyAttr setObject:privateTag forKey:(__bridge id)kSecAttrApplicationTag];
     // See SecKey.h to set other flag values.
-    //NSLog(@"1");
+
     // Set the public key dictionary.
     [publicKeyAttr setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)kSecAttrIsPermanent];
     [publicKeyAttr setObject:publicTag forKey:(__bridge id)kSecAttrApplicationTag];
     // See SecKey.h to set other flag values.
-    //NSLog(@"1");
+
     // Set attributes to top level dictionary.
     [keyPairAttr setObject:privateKeyAttr forKey:(__bridge id)kSecPrivateKeyAttrs];
     [keyPairAttr setObject:publicKeyAttr forKey:(__bridge id)kSecPublicKeyAttrs];
-    //NSLog(@"1");
+
     // SecKeyGeneratePair returns the SecKeyRefs just for educational purposes.
     sanityCheck = SecKeyGeneratePair((__bridge CFDictionaryRef)keyPairAttr, &publicKey, &privateKey);
 //  LOGGING_FACILITY( sanityCheck == noErr && publicKey != NULL && privateKey != NULL, @"Something really bad went wrong with generating the key pair." );
@@ -71,11 +70,11 @@ static const UInt8 privateKeyIdentifier[] = "com.apple.sample.privatekey";
 //  [privateKeyAttr release];
 //  [publicKeyAttr release];
 //  [keyPairAttr release];
-    
-    CDVPluginResult* result = [CDVPluginResult
+
+	CDVPluginResult* result = [CDVPluginResult
                                resultWithStatus:CDVCommandStatus_OK
                                messageAsString:[keyPairAttr description]];
-    
+
     [self success:result callbackId:callbackId];
 }
 

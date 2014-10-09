@@ -36,17 +36,19 @@ var app = {
         app.receivedEvent('deviceready');
 
         var win = function (result) {
-            alert(JSON.stringify(result));
-        }
+            alert(result);
+        };
+        
         var fail = function (error) {
             alert("ERROR: " + error);
         };
+
+		//window.hello.generateKeyPair(win, fail, 2048);
 		
-		
-		
-        console.dir(window.hello.foo)
-        window.hello.greet(win, fail)
+        console.dir(window.hello.foo);
+        window.hello.greet(win, fail);
     },
+    
     // Update DOM on a Received Event
     receivedEvent: function (id) {
         var parentElement = document.getElementById(id);

@@ -10,6 +10,6 @@
 }
 
 - (void) greet:(CDVInvokedUrlCommand*)command;
-- (void) generateKeyPair:(NSUInteger)keySize;
+- (void) generateKeyPair:(CDVInvokedUrlCommand*)command;
 
 @end

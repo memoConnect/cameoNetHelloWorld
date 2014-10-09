@@ -5,8 +5,8 @@
 const size_t BUFFER_SIZE = 64;
 const size_t CIPHER_BUFFER_SIZE = 1024;
 const uint32_t PADDING = kSecPaddingNone;
-static const UInt8 publicKeyIdentifier[] = "com.apple.sample.publickey";
-static const UInt8 privateKeyIdentifier[] = "com.apple.sample.privatekey";
+static const UInt8 publicKeyIdentifier[] = "de.cameonet.sample.publickey";
+static const UInt8 privateKeyIdentifier[] = "de.cameonet.sample.privatekey";
 
 - (void)greet:(CDVInvokedUrlCommand*)command
 {
@@ -25,7 +25,8 @@ static const UInt8 privateKeyIdentifier[] = "com.apple.sample.privatekey";
 - (void)generateKeyPair:(CDVInvokedUrlCommand*)command
 {
     NSString* callbackId = [command callbackId];
-    NSUInteger keySize = [[command arguments] objectAtIndex:0];
+    //NSUInteger keySize = [[command arguments] objectAtIndex:0];
+	int keySize = 2048;
 
     OSStatus sanityCheck = noErr;
     publicKey = NULL;
@@ -72,7 +73,7 @@ static const UInt8 privateKeyIdentifier[] = "com.apple.sample.privatekey";
 
 	CDVPluginResult* result = [CDVPluginResult
                                resultWithStatus:CDVCommandStatus_OK
-                               messageAsString:[keyPairAttr toString]];
+                               messageAsString:[keyPairAttr description]];
 
     [self success:result callbackId:callbackId];
 }
