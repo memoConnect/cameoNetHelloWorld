@@ -1,13 +1,9 @@
 #import <Cordova/CDVPlugin.h>
 #import <Security/Security.h>
+#import <CommonCrypto/CommonDigest.h>
+#import <CommonCrypto/CommonCryptor.h>
 
 @interface HWPHello : CDVPlugin
-{
-	SecKeyRef publicKey;
-	SecKeyRef privateKey;
-	NSData *publicTag;
-	NSData *privateTag;
-}
 
 - (void) greet:(CDVInvokedUrlCommand*)command;
 - (void) generateKeyPair:(CDVInvokedUrlCommand*)command;

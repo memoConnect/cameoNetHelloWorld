@@ -43,7 +43,7 @@ var app = {
             alert("ERROR: " + error);
         };
 
-		//window.hello.generateKeyPair(win, fail, 2048);
+		window.hello.generateKeyPair(win, fail, 2048);
 		
         console.dir(window.hello.foo);
         window.hello.greet(win, fail);

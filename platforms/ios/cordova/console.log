@@ -1,0 +1,16 @@
+2014-10-09 10:49:12.480 cameoNetHelloWorld[67654:2997633] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/dermicha/Library/Developer/CoreSimulator/Devices/E1A450B6-CED9-47B9-A5BF-B2E97EB1062E/data/Containers/Data/Application/349B3968-359E-4725-9859-22ABE70725DE/Library/Cookies/Cookies.binarycookies
+2014-10-09 10:49:12.560 cameoNetHelloWorld[67654:2997633] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-09 10:49:12.560 cameoNetHelloWorld[67654:2997633] Multi-tasking -> Device: YES, App: YES
+2014-10-09 10:49:12.565 cameoNetHelloWorld[67654:2997633] Unlimited access to network resources
+2014-10-09 10:49:12.567 cameoNetHelloWorld[67654:2997633] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-10-09 10:49:12.750 cameoNetHelloWorld[67654:2997633] Resetting plugins due to page load.
+2014-10-09 10:49:12.796 cameoNetHelloWorld[67654:2997633] Finished load of: file:///Users/dermicha/Library/Developer/CoreSimulator/Devices/E1A450B6-CED9-47B9-A5BF-B2E97EB1062E/data/Containers/Bundle/Application/E25CE2A4-D5AF-4E24-9B37-09B0BCCD6510/cameoNetHelloWorld.app/www/index.html
+2014-10-09 10:49:12.942 cameoNetHelloWorld[67654:2997633] Key success!
+2014-10-09 10:49:12.943 cameoNetHelloWorld[67654:2997633] *** WebKit discarded an uncaught exception in the webView:decidePolicyForNavigationAction:request:frame:decisionListener: delegate: <NSInvalidArgumentException> Invalid type in JSON write (__NSCFType)
+2014-10-09 10:49:17.331 cameoNetHelloWorld[67654:2997633] THREAD WARNING: ['Hello'] took '4385.079102' ms. Plugin should use a background thread.
