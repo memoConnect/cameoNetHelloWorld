@@ -36,7 +36,7 @@ var app = {
         app.receivedEvent('deviceready');
 
         var win = function (result) {
-            alert(result);
+            alert(JSON.stringify(result));
         };
         
         var fail = function (error) {

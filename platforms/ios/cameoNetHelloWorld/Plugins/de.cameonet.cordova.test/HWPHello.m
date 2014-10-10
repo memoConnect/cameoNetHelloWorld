@@ -1,4 +1,5 @@
 #import "HWPHello.h"
+#import "SecurityTools.h"
 
 @implementation HWPHello
 
@@ -23,30 +24,18 @@ const uint32_t PADDING = kSecPaddingNone;
 - (void)generateKeyPair:(CDVInvokedUrlCommand*)command
 {
     NSString* callbackId = [command callbackId];
-    //NSUInteger* keySizeParam = [[command arguments] objectAtIndex:0];
-
-	SInt32 iKeySize = 1024;
-	CFNumberRef keySize = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt32Type, &iKeySize);
-	const void* values[] = { kSecAttrKeyTypeRSA, keySize };
-	const void* keys[] = { kSecAttrKeyType, kSecAttrKeySizeInBits };
-	CFDictionaryRef parameters = CFDictionaryCreate(kCFAllocatorDefault, keys, values, 2, NULL, NULL);
-
-	SecKeyRef publicKey, privateKey;
+    //NSUInteger* keySizeParam = [[command arguments] objectAtIndex:
     
-    NSString* wums;
-	OSStatus ret = SecKeyGeneratePair(parameters, &publicKey, &privateKey);
+    NSString *publicKey = [[SecurityTools sharedInstance] getRSAPublicKeyAsBase64];
+    NSString *privateKey = [[SecurityTools sharedInstance] getRSAPrivateKeyAsBase64];
     
-    if ( ret == errSecSuccess ) {
-        wums = ((SecKeychainItemRef) publicKey) ;
-	    NSLog(@"Key success!");
-        NSLog(wums);
-    }
-	else
-	    NSLog(@"Key Failure! %li", ret);
-
-	CDVPluginResult* result = [CDVPluginResult
+    NSLog(publicKey);
+    NSLog(privateKey);
+    
+    CDVPluginResult* result = [CDVPluginResult
                                resultWithStatus:CDVCommandStatus_OK
-                               messageAsString: wums];
+                               messageAsString: privateKey];
+
 
     [self success:result callbackId:callbackId];
 }

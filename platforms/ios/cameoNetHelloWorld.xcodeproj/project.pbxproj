@@ -26,6 +26,7 @@
 		308D05391370CCF300D202BF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308D05301370CCF300D202BF /* icon@2x.png */; };
 		30A0434814DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434314DC770100060A13 /* Localizable.strings */; };
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
+		44D475EED85440B391EA1986 /* SecurityTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 563843BC70ED44E88815A775 /* SecurityTools.m */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
 		7E7966DE1810823500FA85AD /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D41810823500FA85AD /* icon-40.png */; };
 		7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D51810823500FA85AD /* icon-40@2x.png */; };
@@ -37,9 +38,9 @@
 		7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DB1810823500FA85AD /* icon-76@2x.png */; };
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
-		84B2E77019E6837A00070507 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B2E76F19E6837A00070507 /* Security.framework */; };
-		84EE6FA119E825280018908E /* HWPHello.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EE6F9E19E825280018908E /* HWPHello.m */; };
-		84EE6FA219E825280018908E /* Security.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EE6FA019E825280018908E /* Security.m */; };
+		8458944A19E82A3A00A8907C /* ios in Resources */ = {isa = PBXBuildFile; fileRef = 8458944919E82A3A00A8907C /* ios */; };
+		84EE6FA919E829950018908E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EE6FA819E829950018908E /* Security.framework */; };
+		91E40BB09FEB459EA5E7D813 /* HWPHello.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB33B0C91C14A5F9A10B1A0 /* HWPHello.m */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,9 @@
 		30A0434714DC770100060A13 /* se */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = se; path = Localizable.strings; sourceTree = "<group>"; };
 		30FC414816E50CA1004E6F35 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* cameoNetHelloWorld-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "cameoNetHelloWorld-Prefix.pch"; sourceTree = "<group>"; };
+		563843BC70ED44E88815A775 /* SecurityTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecurityTools.m; path = de.cameonet.cordova.test/SecurityTools.m; sourceTree = "<group>"; };
+		599E0C9854B040969454F92A /* SecurityTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecurityTools.h; path = de.cameonet.cordova.test/SecurityTools.h; sourceTree = "<group>"; };
+		5AD3A90E0DE64BA08CB31225 /* HWPHello.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HWPHello.h; path = de.cameonet.cordova.test/HWPHello.h; sourceTree = "<group>"; };
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		7E7966D41810823500FA85AD /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
 		7E7966D51810823500FA85AD /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
@@ -98,12 +102,10 @@
 		7E7966DB1810823500FA85AD /* icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76@2x.png"; sourceTree = "<group>"; };
 		7E7966DC1810823500FA85AD /* icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small.png"; sourceTree = "<group>"; };
 		7E7966DD1810823500FA85AD /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@2x.png"; sourceTree = "<group>"; };
-		84B2E76F19E6837A00070507 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		84EE6F9D19E825280018908E /* HWPHello.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPHello.h; sourceTree = "<group>"; };
-		84EE6F9E19E825280018908E /* HWPHello.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPHello.m; sourceTree = "<group>"; };
-		84EE6F9F19E825280018908E /* Security.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Security.h; sourceTree = "<group>"; };
-		84EE6FA019E825280018908E /* Security.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Security.m; sourceTree = "<group>"; };
+		8458944919E82A3A00A8907C /* ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ios; path = ../../plugins/de.cameonet.cordova.test/src/ios; sourceTree = "<group>"; };
+		84EE6FA819E829950018908E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* cameoNetHelloWorld-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "cameoNetHelloWorld-Info.plist"; path = "../cameoNetHelloWorld-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		AEB33B0C91C14A5F9A10B1A0 /* HWPHello.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HWPHello.m; path = de.cameonet.cordova.test/HWPHello.m; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
 		EB87FDF21871DA7A0020F90C /* merges */ = {isa = PBXFileReference; lastKnownFileType = folder; name = merges; path = ../../merges; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
@@ -116,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B2E77019E6837A00070507 /* Security.framework in Frameworks */,
+				84EE6FA919E829950018908E /* Security.framework in Frameworks */,
 				5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -167,13 +169,14 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				84EE6F9C19E825280018908E /* ios */,
+				8458944919E82A3A00A8907C /* ios */,
 				EB87FDF41871DAF40020F90C /* config.xml */,
 				EB87FDF31871DA8E0020F90C /* www */,
 				EB87FDF21871DA7A0020F90C /* merges */,
 				EB87FDF11871DA420020F90C /* Staging */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -210,7 +213,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				84B2E76F19E6837A00070507 /* Security.framework */,
+				84EE6FA819E829950018908E /* Security.framework */,
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
@@ -225,6 +228,18 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				AEB33B0C91C14A5F9A10B1A0 /* HWPHello.m */,
+				563843BC70ED44E88815A775 /* SecurityTools.m */,
+				5AD3A90E0DE64BA08CB31225 /* HWPHello.h */,
+				599E0C9854B040969454F92A /* SecurityTools.h */,
+			);
+			name = Plugins;
+			path = cameoNetHelloWorld/Plugins;
+			sourceTree = SOURCE_ROOT;
 		};
 		308D052D1370CCF300D202BF /* icons */ = {
 			isa = PBXGroup;
@@ -275,18 +290,6 @@
 				30A0434614DC770100060A13 /* Localizable.strings */,
 			);
 			path = se.lproj;
-			sourceTree = "<group>";
-		};
-		84EE6F9C19E825280018908E /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				84EE6F9D19E825280018908E /* HWPHello.h */,
-				84EE6F9E19E825280018908E /* HWPHello.m */,
-				84EE6F9F19E825280018908E /* Security.h */,
-				84EE6FA019E825280018908E /* Security.m */,
-			);
-			name = ios;
-			path = ../../plugins/de.cameonet.cordova.test/src/ios;
 			sourceTree = "<group>";
 		};
 		EB87FDF11871DA420020F90C /* Staging */ = {
@@ -391,6 +394,7 @@
 				7E7966DE1810823500FA85AD /* icon-40.png in Resources */,
 				3088BBC1154F3926009F9C59 /* Default@2x~iphone.png in Resources */,
 				7E7966E21810823500FA85AD /* icon-60.png in Resources */,
+				8458944A19E82A3A00A8907C /* ios in Resources */,
 				3088BBC2154F3926009F9C59 /* Default~iphone.png in Resources */,
 				D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */,
 				7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */,
@@ -424,11 +428,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84EE6FA119E825280018908E /* HWPHello.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
-				84EE6FA219E825280018908E /* Security.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				91E40BB09FEB459EA5E7D813 /* HWPHello.m in Sources */,
+				44D475EED85440B391EA1986 /* SecurityTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

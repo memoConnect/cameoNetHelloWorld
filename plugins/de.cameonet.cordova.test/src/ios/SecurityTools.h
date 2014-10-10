@@ -6,15 +6,16 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Security : NSObject
+@interface SecurityTools : NSObject
 {
     SecKeyRef publicKey;
     SecKeyRef privateKey;
 
 }
 
-+(Security *)sharedInstance;
++(SecurityTools *)sharedInstance;
 -(NSString *)getRSAPublicKeyAsBase64;
+-(NSString *)getRSAPrivateKeyAsBase64;
 -(NSString *)signWithPrivateKey:(NSString* )string;
 
 

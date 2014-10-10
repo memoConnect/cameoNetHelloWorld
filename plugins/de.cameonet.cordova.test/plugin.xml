@@ -28,6 +28,8 @@
         </config-file>
 	    <header-file src="src/ios/HWPHello.h" />	
 	    <source-file src="src/ios/HWPHello.m" />	
+		<header-file src="src/ios/SecurityTools.h" />	
+		<source-file src="src/ios/SecurityTools.m" />
     </platform>	
 
 </plugin>
