@@ -32,15 +32,21 @@ const uint32_t PADDING = kSecPaddingNone;
 	CFDictionaryRef parameters = CFDictionaryCreate(kCFAllocatorDefault, keys, values, 2, NULL, NULL);
 
 	SecKeyRef publicKey, privateKey;
+    
+    NSString* wums;
 	OSStatus ret = SecKeyGeneratePair(parameters, &publicKey, &privateKey);
-	if ( ret == errSecSuccess )
+    
+    if ( ret == errSecSuccess ) {
+        wums = ((SecKeychainItemRef) publicKey) ;
 	    NSLog(@"Key success!");
-	else 
+        NSLog(wums);
+    }
+	else
 	    NSLog(@"Key Failure! %li", ret);
 
 	CDVPluginResult* result = [CDVPluginResult
                                resultWithStatus:CDVCommandStatus_OK
-                               messageAsString: (__bridge NSString *)(publicKey)];
+                               messageAsString: wums];
 
     [self success:result callbackId:callbackId];
 }
