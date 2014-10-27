@@ -38,17 +38,38 @@ var app = {
         var win = function (result) {
             alert(JSON.stringify(result));
         };
-        
+
         var fail = function (error) {
             alert("ERROR: " + error);
         };
 
-		window.hello.generateKeyPair(win, fail, 2048);
-		
-        console.dir(window.hello.foo);
-        window.hello.greet(win, fail);
+        //window.hello.generateKeyPair(win, fail, 2048);
+        //console.dir(window.hello.foo);
+
+        var nacl = nacl_factory.instantiate();
+        alert(nacl.to_hex(nacl.random_bytes(16)));
+
+        var start = Date.now()
+        var keypair1 = nacl.crypto_box_keypair()
+        var timeKeypair = Date.now() - start
+        var keypair2 = nacl.crypto_box_keypair()
+
+
+        start = Date.now()
+        var message = nacl.encode_utf8("MoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepMoepv");
+        var nonce = nacl.crypto_box_random_nonce();
+        var encrypted = nacl.crypto_box(message, nonce, keypair2.boxPk, keypair1.boxSk);
+        var timeEncrypt = Date.now() - start
+
+        start = Date.now()
+        var decrypted = nacl.crypto_box_open(encrypted, nonce, keypair1.boxPk, keypair2.boxSk);
+        var timeDecrypt = Date.now() - start
+
+        alert("genKeyPair: " + timeKeypair +"\nencrypt: " + timeEncrypt+"\ndecrypt: " + timeDecrypt)
+        alert(JSON.stringify(encrypted))
+
     },
-    
+
     // Update DOM on a Received Event
     receivedEvent: function (id) {
         var parentElement = document.getElementById(id);
